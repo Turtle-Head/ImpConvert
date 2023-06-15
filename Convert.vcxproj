@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BMICalculator.cpp" />
+    <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="Convert.cpp" />
     <ClCompile Include="converter.cpp" />
     <ClCompile Include="DistanceConverter.cpp" />
@@ -134,6 +136,8 @@
     <ClCompile Include="WeightConverter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BMICalculator.h" />
+    <ClInclude Include="Calculator.h" />
     <ClInclude Include="converter.h" />
     <ClInclude Include="DistanceConverter.h" />
     <ClInclude Include="HeightConverter.h" />

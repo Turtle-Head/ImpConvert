@@ -1,0 +1,9 @@
+﻿  Convert.cpp
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(13,12): warning C4101: 'height': unreferenced local variable
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(13,20): warning C4101: 'weight': unreferenced local variable
+  converter.cpp
+  DistanceConverter.cpp
+  HeightConverter.cpp
+  WeightConverter.cpp
+  Generating Code...
+  Convert.vcxproj -> C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\x64\Debug\Convert.exe

@@ -2,7 +2,10 @@
 //
 
 #include <iostream>
+#include "BMICalculator.h"
+#include "SpeedCalculater.h"
 double speedCalc();
+double BMICalc();
 void menu();
 int main()
 {
@@ -10,23 +13,23 @@ int main()
 }
 
 double speedCalc() {
-    double speed, distance, time;
+    double distance, time;
     std::cout << "\n Please enter distance: ";
     std::cin >> distance;
     std::cout << "\n Please enter time: ";
     std::cin >> time;
-    speed = distance / time;
-    return speed;
+    SpeedCalculater speed; 
+    return speed.calculate(distance, time);
 }
 
 double BMICalc() {
-    double weight, height, BMI;
+    double weight, height;
     std::cout << "\nPlease enter your height: ";
     std::cin >> height;
     std::cout << "\nPlease enter your weight: ";
     std::cin >> weight;
-    BMI = weight / (height * height);
-    return BMI;
+    BMICalculator BMI;
+    return BMI.calculate(weight, height);
 }
 
 void menu() {

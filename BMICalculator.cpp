@@ -3,7 +3,8 @@
 
 double BMICalculator::calculate(double weight, double height)
 {
-    return 0.0;
+    double result = weight / (height * height);
+    return result;
 }
 
 std::string BMICalculator::interpretResult(double result)

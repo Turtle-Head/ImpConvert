@@ -11,7 +11,14 @@ int main()
 {
     menu();
 }
-
+void metricChoice() {
+    std::cout << "\n Your Body mass index is " << BMICalc() << "\n";
+    std::cout << "\nSpeed = distance / time :" << speedCalc() << " kM/hr \n";
+}
+void imperialChoice() {
+    std::cout << "\n Your Body mass index is " << BMICalc() << "\n";
+    std::cout << "\nSpeed = distance / time :" << speedCalc() << " Mph \n";
+}
 double speedCalc() {
     double distance, time;
     std::cout << "\n Please enter distance: ";
@@ -38,11 +45,11 @@ void menu() {
     int choice = 0;
 
     while (exit) {
-        std::cout << "\n--Converter App--\n";
-        std::cout << "- 0 - Exit Converter\n";
-        std::cout << " - 1 - To Metric - \n";
-        std::cout << " - 2 - To Imperial - \n";
-        std::cout << "- Please enter a choice: ";
+        std::cout << "\n--Converter--\n ";
+        std::cout << "- 0 - Exit Converter - \n";
+        std::cout << " - 1 - Metric - \n";
+        std::cout << " - 2 - Imperial - \n";
+        std::cout << "- Please enter your preferred unit system: ";
         std::cin >> choice;
         switch (choice) {
         case 0: {
@@ -50,14 +57,12 @@ void menu() {
             break; 
         }
         case 1: {
-                     std::cout << "\n Your Body mass index is " << BMICalc() << "\n";
-                     std::cout << "\nSpeed = distance / time :" << speedCalc() << " kM/hr \n";
-                  break;
+            metricChoice();
+            break;
         }
         case 2: {
-                std::cout << "\n Your Body mass index is " << BMICalc() << "\n";
-                std::cout << "\nSpeed = distance / time :" << speedCalc() << " Mph \n"; 
-                break;
+            imperialChoice();
+            break;
             }
 
         }

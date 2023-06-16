@@ -2,7 +2,7 @@
 
 double SpeedCalculater::calculate(double distance, double time)
 {
-    return 0.0;
+    return (distance / time);
 }
 
 std::string SpeedCalculater::interpretResult(double result)

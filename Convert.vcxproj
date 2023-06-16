@@ -133,6 +133,7 @@
     <ClCompile Include="converter.cpp" />
     <ClCompile Include="DistanceConverter.cpp" />
     <ClCompile Include="HeightConverter.cpp" />
+    <ClCompile Include="SpeedCalculater.cpp" />
     <ClCompile Include="WeightConverter.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +142,7 @@
     <ClInclude Include="converter.h" />
     <ClInclude Include="DistanceConverter.h" />
     <ClInclude Include="HeightConverter.h" />
+    <ClInclude Include="SpeedCalculater.h" />
     <ClInclude Include="WeightConverter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

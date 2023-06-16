@@ -10,8 +10,9 @@ int main()
 
 void menu() {
     bool exit = true;
-    double height, weight;
+    double height, weight, BMI;
     int choice = 0;
+
     while (exit) {
         std::cout << "\n--Converter App--\n";
         std::cout << "- 0 - Exit Converter\n";
@@ -29,7 +30,14 @@ void menu() {
             std::cin >> choice;
             switch (choice)
             {
-            case 1:break;
+            case 1: { // BMI = kg/m2
+                std::cout << "\nPlease enter your height in Meters: ";
+                std::cin >> height;
+                std::cout << "\nPlease enter your weight in KG: ";
+                std::cin >> weight;
+                BMI = weight / (height * height);
+                std::cout << "\n Your Body mass index is " << BMI << "\n";
+                break; }
             case 2:break;
             case 3:break;
             case 0:continue;

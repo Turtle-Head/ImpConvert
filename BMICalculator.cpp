@@ -1,4 +1,5 @@
 #include "BMICalculator.h"
+#include <iostream>
 
 double BMICalculator::calculate(double weight, double height)
 {
@@ -12,4 +13,5 @@ std::string BMICalculator::interpretResult(double result)
 
 void BMICalculator::description() const
 {
+    std::cout << "\nCalculates Body Mass Index\n";
 }

@@ -1,7 +1,2 @@
-﻿  BMICalculator.cpp
-C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Calculator.h(8,15): error C3668: 'Calculator::description': method with override specifier 'override' did not override any base class methods
-  Calculator.cpp
-C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Calculator.h(8,15): error C3668: 'Calculator::description': method with override specifier 'override' did not override any base class methods
-  SpeedCalculater.cpp
-C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Calculator.h(8,15): error C3668: 'Calculator::description': method with override specifier 'override' did not override any base class methods
-  Generating Code...
+﻿  Convert.cpp
+  Convert.vcxproj -> C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\x64\Debug\Convert.exe

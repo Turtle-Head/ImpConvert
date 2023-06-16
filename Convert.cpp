@@ -27,41 +27,45 @@ void menu() {
             std::cout << "- 1 - Get your Body Mass Index Score \n";
             std::cout << "- 0 - Return to previous menu -";
             std::cout << "- Please choose: ";
+            std::cin >> choice; }
+              switch (choice)
+              {
+              case 1: { // BMI = kg/m2
+                  std::cout << "\nPlease enter your height in Meters: ";
+                  std::cin >> height;
+                  std::cout << "\nPlease enter your weight in KG: ";
+                  std::cin >> weight;
+                  BMI = weight / (height * height);
+                  std::cout << "\n Your Body mass index is " << BMI << "\n";
+                  break; }
+              case 0:continue;
+                  break;
+              }
+        case 2: {
+            std::cout << "\n-- Imperial choices:\n";
+            std::cout << "- 1 - Get your Body Mass Index Score \n";
+            std::cout << "- 0 - Return to previous menu -";
+            std::cout << "- Please choose: ";
             std::cin >> choice;
             switch (choice)
             {
-            case 1: { // BMI = kg/m2
-                std::cout << "\nPlease enter your height in Meters: ";
+            case 1: {
+                std::cout << "\nPlease enter your height in Feet: ";
                 std::cin >> height;
-                std::cout << "\nPlease enter your weight in KG: ";
+                std::cout << "\nPlease enter your weight in LB: ";
                 std::cin >> weight;
                 BMI = weight / (height * height);
                 std::cout << "\n Your Body mass index is " << BMI << "\n";
-                break; }
-            case 2:break;
-            case 3:break;
-            case 0:continue;
             }
-            break; 
+            case 0: break;
+
+
+            }
+
         }
-        case 2: {
-            // do next menu    
-            break; 
-        }
-        case 3: { 
-            // some action
-            break; 
-        }
-        case 4: { 
-            break; 
-        }
-        case 5: { 
-            break; 
-        }
-        case 6: { 
-            break; 
-        }
+
+
         }
     }
-}
 
+}

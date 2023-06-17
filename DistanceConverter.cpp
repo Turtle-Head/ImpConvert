@@ -2,12 +2,14 @@
 
 double DistanceConverter::toMetric(double value)
 {
-    return 0.0;
+    value *= 1.60934;
+    return value;
 }
 
 double DistanceConverter::toImperial(double value)
 {
-    return 0.0;
+    value /= 1.60934;
+    return value;
 }
 
 void DistanceConverter::description() const

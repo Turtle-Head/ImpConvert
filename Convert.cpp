@@ -15,7 +15,7 @@ int main()
 }
 void metricChoice() {
     std::cout << "\n Your Body mass index is " << BMICalc(true) << "\n";
-    std::cout << "\nSpeed = distance / time :" << speedCalc(true) << " kM/hr \n";
+    std::cout << "\nSpeed = distance / time :" << speedCalc(true) << " kM/h \n";
 }
 void imperialChoice() {
     std::cout << "\n Your Body mass index is " << BMICalc(false) << "\n";
@@ -48,11 +48,6 @@ double BMICalc(bool m) {
     BMICalculator BMI;
     result = BMI.calculate(weight, height);
     return result;
-}
-
-double speedCalc()
-{
-    return 0.0;
 }
 
 void menu() {

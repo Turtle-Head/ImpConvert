@@ -1,5 +1,7 @@
 // Convert.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Author:: James Frehr
+// Topic: Inheritance, Polymorphism, and Dynamic Binding
+// Second Version
 
 #include <iostream>
 #include "BMICalculator.h"
@@ -20,7 +22,7 @@ void imperialChoice() {
     std::cout << "\nSpeed = distance / time :" << speedCalc(false) << " Mph \n";
 }
 double speedCalc(bool m) {
-    double distance, time;
+    double distance, time, result;
     std::cout << "\n Please enter distance: ";
     std::cin >> distance;
     std::cout << "\n Please enter time: ";
@@ -28,12 +30,13 @@ double speedCalc(bool m) {
     if (m == false) {
         distance *= 1.60934;
     }
-    SpeedCalculater speed; 
-    return speed.calculate(distance, time);
+    SpeedCalculater speed;
+    result = speed.calculate(distance, time);
+    return result;
 }
 
 double BMICalc(bool m) {
-    double weight, height;
+    double weight, height, result;
     std::cout << "\nPlease enter your height: ";
     std::cin >> height;
     std::cout << "\nPlease enter your weight: ";
@@ -43,7 +46,8 @@ double BMICalc(bool m) {
         weight *= 0.453592;
     }
     BMICalculator BMI;
-    return BMI.calculate(weight, height);
+    result = BMI.calculate(weight, height);
+    return result;
 }
 
 double speedCalc()

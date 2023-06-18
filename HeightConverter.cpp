@@ -2,7 +2,8 @@
 
 double HeightConverter::toMetric(double value)
 {
-    return 0.0;
+    value *= 0.3048;
+    return value;
 }
 
 double HeightConverter::toImperial(double value)

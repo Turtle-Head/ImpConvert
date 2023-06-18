@@ -6,6 +6,10 @@
 #include <iostream>
 #include "BMICalculator.h"
 #include "SpeedCalculater.h"
+#include "DistanceConverter.h"
+#include "HeightConverter.h"
+#include "WeightConverter.h"
+
 double speedCalc(bool m);
 double BMICalc(bool m);
 void menu();
@@ -23,12 +27,14 @@ void imperialChoice() {
 }
 double speedCalc(bool m) {
     double distance, time, result;
+    DistanceConverter dobj;
     std::cout << "\n Please enter distance: ";
     std::cin >> distance;
     std::cout << "\n Please enter time: ";
     std::cin >> time;
     if (m == false) {
-        distance *= 1.60934;
+        //distance *= 1.60934;
+        dobj.toMetric(distance);
     }
     SpeedCalculater speed;
     result = speed.calculate(distance, time);
@@ -37,13 +43,15 @@ double speedCalc(bool m) {
 
 double BMICalc(bool m) {
     double weight, height, result;
+    HeightConverter hobj;
+    WeightConverter wobj;
     std::cout << "\nPlease enter your height: ";
     std::cin >> height;
     std::cout << "\nPlease enter your weight: ";
     std::cin >> weight;
     if (m == false) {
-        height *= 0.3048;
-        weight *= 0.453592;
+        hobj.toMetric(height);
+        wobj.toMetric(weight);
     }
     BMICalculator BMI;
     result = BMI.calculate(weight, height);

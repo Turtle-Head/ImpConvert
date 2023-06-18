@@ -2,12 +2,14 @@
 
 double WeightConverter::toMetric(double value)
 {
-    return 0.0;
+    value *= 0.453592;
+    return value;
 }
 
 double WeightConverter::toImperial(double value)
 {
-    return 0.0;
+    value /= 0.453592;
+    return value;
 }
 
 void WeightConverter::description() const

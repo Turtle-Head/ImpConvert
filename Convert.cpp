@@ -19,7 +19,7 @@ int main()
 }
 void metricChoice() {
     std::cout << "\n Your Body mass index is " << BMICalc(true) << "\n";
-    std::cout << "\nSpeed = distance / time :" << speedCalc(true) << " kM/h \n";
+    std::cout << "\nSpeed = distance / time :" << speedCalc(true) << " Kph \n";
 }
 void imperialChoice() {
     std::cout << "\n Your Body mass index is " << BMICalc(false) << "\n";
@@ -27,34 +27,35 @@ void imperialChoice() {
 }
 double speedCalc(bool m) {
     double distance, time, result;
-    DistanceConverter dobj;
+    DistanceConverter dobj; // DistanceConverter object : used to convert imperial to metric
     std::cout << "\n Please enter distance: ";
     std::cin >> distance;
     std::cout << "\n Please enter time: ";
     std::cin >> time;
-    if (m == false) {
-        //distance *= 1.60934;
+    if (m == false) { 
+        // If Imperial selection was made we need to covert to maetric for the calculations
         dobj.toMetric(distance);
     }
     SpeedCalculater speed;
-    result = speed.calculate(distance, time);
+    result = speed.calculate(distance, time);   // calculates speed based on distance/time
     return result;
 }
-
+// If Imperial we need to change values to metric after getting them from user
 double BMICalc(bool m) {
     double weight, height, result;
-    HeightConverter hobj;
-    WeightConverter wobj;
+    HeightConverter hobj;   // Height Converter object : used to convert imperial to metric
+    WeightConverter wobj;   // Weight Converter object : used to convert imperial to metric
     std::cout << "\nPlease enter your height: ";
     std::cin >> height;
     std::cout << "\nPlease enter your weight: ";
     std::cin >> weight;
+    // If the request for imperial measurements is made if metric = false so we need to convert to metric for the calculatioins
     if (m == false) {
-        hobj.toMetric(height);
-        wobj.toMetric(weight);
+        height = hobj.toMetric(height); // : used to convert imperial to metric
+        weight = wobj.toMetric(weight); // : used to convert imperial to metric
     }
     BMICalculator BMI;
-    result = BMI.calculate(weight, height);
+    result = BMI.calculate(weight, height); // Get BMI value
     return result;
 }
 

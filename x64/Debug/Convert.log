@@ -1,2 +1,8 @@
-﻿  WeightConverter.cpp
+﻿  Convert.cpp
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(64,12): warning C4101: 'height': unreferenced local variable
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(64,46): warning C4101: 'distance': unreferenced local variable
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(64,20): warning C4101: 'weight': unreferenced local variable
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(64,40): warning C4101: 'time': unreferenced local variable
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(64,28): warning C4101: 'BMI': unreferenced local variable
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(64,33): warning C4101: 'speed': unreferenced local variable
   Convert.vcxproj -> C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\x64\Debug\Convert.exe

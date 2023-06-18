@@ -2,13 +2,16 @@
 
 double HeightConverter::toMetric(double value)
 {
+    // feet to meters conversion
     value *= 0.3048;
     return value;
 }
 
 double HeightConverter::toImperial(double value)
 {
-    return 0.0;
+    // meters to feet conversion
+    value /= 0.3048;
+    return value;
 }
 
 void HeightConverter::description() const

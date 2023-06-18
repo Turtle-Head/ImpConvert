@@ -3,7 +3,8 @@
 
 double BMICalculator::calculate(double weight, double height)
 {
-    double result = weight / (height * height);
+    // Formula to calculate in metric is weight / height squared so w use pow(arg, 2) to square height
+    double result = weight / pow(height,2);
     return result;
 }
 

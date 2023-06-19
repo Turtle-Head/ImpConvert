@@ -1,7 +1,7 @@
 #pragma once
-#include "converter.h"
+#include "Converter.h"
 class DistanceConverter :
-    public converter
+    public Converter
 {
 public:
     double toMetric(double value) override;

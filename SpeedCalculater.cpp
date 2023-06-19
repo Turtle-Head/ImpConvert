@@ -7,8 +7,18 @@ double SpeedCalculater::calculate(double distance, double time)
 
 std::string SpeedCalculater::interpretResult(double result)
 {
-
-    return std::string();
+    std::string otp;
+    if (result < 1 && result != 0) {
+        otp = "Walking";
+    }
+    else if (result > 1 && result < 30) {
+        otp = "Jogging";
+    }
+    else if (result > 75 && result < 100) {
+        otp = "Sprnting";
+    }
+    else otp = "Run forest run";
+    return otp;
 }
 
 void SpeedCalculater::description() const

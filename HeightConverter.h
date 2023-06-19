@@ -1,7 +1,7 @@
 #pragma once
 #include "converter.h"
 class HeightConverter :
-    public converter
+    public Converter
 {
 public:
     double toMetric(double value) override;

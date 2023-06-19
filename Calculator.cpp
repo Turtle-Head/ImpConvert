@@ -5,7 +5,8 @@
 
 void Calculator::printResult(double result)
 {
-	std::cout << "Result: " << result << "\n";
+	
+	std::cout << interpretResult(result)<< " Result: " << result << " ";
 
 }
 

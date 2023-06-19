@@ -1,5 +1,5 @@
 #pragma once
-class converter
+class Converter
 {
 
 
@@ -9,5 +9,7 @@ public:
 	virtual void description() const;		// required
 	
 	
+
+	Converter() = default;
 };
 

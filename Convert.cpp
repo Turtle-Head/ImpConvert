@@ -12,25 +12,21 @@
 #include "Calculator.h"
 #include "Converter.h"
 
-double speedCalc(bool m);
-double BMICalc(bool m);
+void speedCalc(bool m);
+void BMICalc(bool m);
 void menu();
 int main()
 {
-   /* converter* UserObj;
-    double height, weight;
-
-    std::cout << UserObj->BMI->printResult(UserObj->BMI->calculate(weight,height));*/
-
-
-
-
-    menu();
+      menu();
+      return 0;
 }
 
-double speedCalc(bool m) {
+void Calculate(Calculator* obj,double value, double val2) {
+    obj->printResult(obj->calculate(value, val2));  // Dynamic binding BMI
+}
+
+void speedCalc(bool m) {
     double distance, time, result;
-    //DistanceConverter dobj; // DistanceConverter object : used to convert imperial to metric
     DistanceConverter actionObj{};
     SpeedCalculater display{};
     std::cout << "\n Please enter distance: ";
@@ -49,14 +45,11 @@ double speedCalc(bool m) {
           double dimp = actionObj.toImperial(distance);
         std::cout << " Distance in Miles: " << dimp << "\n";
     }
-    //SpeedCalculater speed;
-    //result = speed.calculate(distance, time);   // calculates speed based on distance/time
-    result = display.calculate(distance, time);
-
-    return result;
+   
+    Calculate(&display, distance, time);
 }
 // If Imperial we need to change values to metric after getting them from user
-double BMICalc(bool m) {
+void BMICalc(bool m) {
     double weight, height, result;
     HeightConverter hobj{};   // Height Converter object : used to convert imperial to metric
     WeightConverter wobj{};   // Weight Converter object : used to convert imperial to metric
@@ -79,13 +72,15 @@ double BMICalc(bool m) {
         std::cout << " Weight KG: " << weight << " LBs: " << wimp << "\n";
     }
     BMICalculator BMI{};
-    result = BMI.calculate(weight, height); // Get BMI value
-    return result;
+     Calculate(&BMI,weight,height); // Get BMI value
+     //result
+    
 }
 
 void menu() {
     bool exit = true;
     int choice = 0;
+    
 
     while (exit) {
         std::cout << "\n--Calculator--\n ";
@@ -100,17 +95,19 @@ void menu() {
             break; 
         }
         case 1: {
-            std::cout << "\n Your Body mass index is " << BMICalc(true) << "\n";
-            std::cout << "\nSpeed = distance / time :" << speedCalc(true) << " Kph \n";
+            BMICalc(true);
+            speedCalc(true);
+            std::cout << " Kph \n";
             break;
         }
         case 2: {
-            std::cout << "\n Your Body mass index is " << BMICalc(false) << "\n";
-            std::cout << "\nSpeed = distance / time :" << speedCalc(false) << " Mph \n";
+            BMICalc(false);
+            speedCalc(false);
+            std::cout << " Mph \n";
             break;
             }
 
         }
     }
-
+    
 }

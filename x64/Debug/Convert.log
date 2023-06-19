@@ -1,2 +1,6 @@
-﻿  BMICalculator.cpp
+﻿  Calculator.cpp
+  Convert.cpp
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(29,28): warning C4101: 'result': unreferenced local variable
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(55,28): warning C4101: 'result': unreferenced local variable
+  Generating Code...
   Convert.vcxproj -> C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\x64\Debug\Convert.exe

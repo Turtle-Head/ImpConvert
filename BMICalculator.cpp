@@ -5,7 +5,7 @@ double BMICalculator::calculate(double weight, double height)
 {
     std::string health;
     double result = weight / pow(height,2);
-    if (result < 18.5) {
+    /*if (result < 18.5) {
         health = "Under Weight";
     }
     else if (result > 18.5 && result < 24.9) {
@@ -23,7 +23,7 @@ double BMICalculator::calculate(double weight, double height)
     else if (result > 40) {
         health = "Extremely Obese";
     }
-    std::cout << "\n Health assessment: " << health << std::endl;
+    std::cout << "\n Health assessment: " << health << std::endl;*/
     return result;
 }
 
@@ -48,7 +48,7 @@ std::string BMICalculator::interpretResult(double result)
     else if (result > 40) {
         health = "Extremely Obese";
     }
-    return std::string(health);
+    return "Your BMI is " + health;
 }
 
 void BMICalculator::description() const

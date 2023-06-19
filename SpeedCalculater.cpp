@@ -8,16 +8,16 @@ double SpeedCalculater::calculate(double distance, double time)
 std::string SpeedCalculater::interpretResult(double result)
 {
     std::string otp;
-    if (result < 1 && result != 0) {
-        otp = "Walking";
+    if (result > 0 && result <= 3 && result != 0) {
+        otp = " Walking... ";
     }
-    else if (result > 1 && result < 30) {
-        otp = "Jogging";
+    else if (result > 4 && result < 15) {
+        otp = " Jogging leisurly... ";
     }
-    else if (result > 75 && result < 100) {
-        otp = "Sprnting";
+    else if (result >= 15 && result < 30) {
+        otp = " Sprnting like the wind... ";
     }
-    else otp = "Run forest run";
+    else otp = " Driving... ";
     return otp;
 }
 

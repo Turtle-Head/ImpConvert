@@ -1,6 +1,6 @@
 # ImpConvert :: Imperial-Metric Converter Assignment: <br>
 # Author: James Fehr
-# Current progress:: Dynamic Binding status -> Failure
+# Current progress:: Dynamic Binding status -> Success in SpeedCalc and BMICalc
 1. Correct Implementation of Base Class Converter (15 Marks)
     - Creation of base class named Converter (5 Marks)
     - Correct implementation of the three virtual member functions (10 Marks)

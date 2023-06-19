@@ -42,8 +42,8 @@ void speedCalc(bool m) {
     }
     else if (m == true) {
         std::cout << " Distance in KM: " << distance;
-          double dimp = actionObj.toImperial(distance);
-        std::cout << " Distance in Miles: " << dimp << "\n";
+          double distanceImperial = actionObj.toImperial(distance);
+        std::cout << " Distance in Miles: " << distanceImperial << "\n";
     }
    
     Calculate(&display, distance, time);

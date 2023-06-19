@@ -1,6 +1,4 @@
 ﻿  Convert.cpp
-C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(29,28): warning C4101: 'result': unreferenced local variable
-C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(53,28): warning C4101: 'result': unreferenced local variable
-  SpeedCalculater.cpp
-  Generating Code...
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(38,28): warning C4101: 'result': unreferenced local variable
+C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\Convert.cpp(62,28): warning C4101: 'result': unreferenced local variable
   Convert.vcxproj -> C:\Users\Stark\Documents\Documents\GitHub\VS Projects\C++\Convert\x64\Debug\Convert.exe

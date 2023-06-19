@@ -1,5 +1,6 @@
 #include "Calculator.h"
 #include <iostream>
+#include "BMICalculator.h"
 #
 
 void Calculator::printResult(double result)

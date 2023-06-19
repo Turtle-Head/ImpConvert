@@ -130,7 +130,7 @@
     <ClCompile Include="BMICalculator.cpp" />
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="Convert.cpp" />
-    <ClCompile Include="converter.cpp" />
+    <ClCompile Include="Converter.cpp" />
     <ClCompile Include="DistanceConverter.cpp" />
     <ClCompile Include="HeightConverter.cpp" />
     <ClCompile Include="SpeedCalculater.cpp" />
@@ -139,7 +139,7 @@
   <ItemGroup>
     <ClInclude Include="BMICalculator.h" />
     <ClInclude Include="Calculator.h" />
-    <ClInclude Include="converter.h" />
+    <ClInclude Include="Converter.h" />
     <ClInclude Include="DistanceConverter.h" />
     <ClInclude Include="HeightConverter.h" />
     <ClInclude Include="SpeedCalculater.h" />

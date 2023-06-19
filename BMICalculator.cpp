@@ -3,14 +3,52 @@
 
 double BMICalculator::calculate(double weight, double height)
 {
-    // Formula to calculate in metric is weight / height squared so w use pow(arg, 2) to square height
+    std::string health;
     double result = weight / pow(height,2);
+    if (result < 18.5) {
+        health = "Under Weight";
+    }
+    else if (result > 18.5 && result < 24.9) {
+        health = "Normal Weight";
+    }
+    else if (result > 25 && result < 29.9) {
+        health = "Over Weight";
+    }
+    else if (result > 30 && result < 34.9) {
+        health = "Obese (Class 1)";
+    }
+    else if (result > 35 && result < 39.9) {
+        health = "Obese (Class 2)";
+    }
+    else if (result > 40) {
+        health = "Extremely Obese";
+    }
+    std::cout << "\n Health assessment: " << health << std::endl;
     return result;
 }
 
 std::string BMICalculator::interpretResult(double result)
 {
-    return std::string();
+    std::string health;
+    if (result < 18.5) {
+        health = "Under Weight";
+    }
+    else if (result > 18.5 && result < 24.9) {
+        health = "Normal Weight";
+    }
+    else if (result > 25 && result < 29.9) {
+        health = "Over Weight";
+    }
+    else if (result > 30 && result < 34.9) {
+        health = "Obese (Class 1)";
+    }
+    else if (result > 35 && result < 39.9) {
+        health = "Obese (Class 2)";
+    }
+    else if (result > 40) {
+        health = "Extremely Obese";
+    }
+    return std::string(health);
 }
 
 void BMICalculator::description() const

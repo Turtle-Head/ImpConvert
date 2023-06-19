@@ -18,7 +18,7 @@
     <ClCompile Include="Convert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="converter.cpp">
+    <ClCompile Include="Converter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WeightConverter.cpp">
@@ -41,7 +41,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="converter.h">
+    <ClInclude Include="Converter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="WeightConverter.h">

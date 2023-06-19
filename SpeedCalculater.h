@@ -6,9 +6,10 @@ class SpeedCalculater :
 {
 public:
     double calculate(double distance, double time) override;    // calculates speed by dividing the given distance by time
-    void description() const override;
 protected:
-    std::string interpretResult(double result) override; 
+    std::string interpretResult(double result) override;
+    void description() const override;
+
     
 
 

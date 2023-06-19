@@ -1,6 +1,6 @@
 # ImpConvert :: Imperial-Metric Converter Assignment: <br>
 # Author: James Fehr
-# Current progress:: All objects are being used to calculate values for results, unsure  if this lines up with the requirements
+# Current progress:: Dynamic Binding status -> Failure
 1. Correct Implementation of Base Class Converter (15 Marks)
     - Creation of base class named Converter (5 Marks)
     - Correct implementation of the three virtual member functions (10 Marks)
